@@ -1,0 +1,56 @@
+create table house(
+houseID int,
+address varchar(100),
+zipcode int,
+primary key(houseID)
+);
+
+
+create table person(
+personID int,
+houseID int,
+personName varchar(75),
+phoneNumber int,
+status int,
+primary key(personID),
+foreign key(houseID) references house
+);
+
+create table testResults(
+personID int,
+testDate date,
+testResult int,
+primary key(personID, testDate),
+foreign key(personID) references person
+);
+
+create table events(
+eventID int,
+eventName varchar(75),
+eventDate date,
+eventAddress varchar(100),
+primary key(eventID)
+);
+
+create table eventAttendance(
+personID int,
+eventID int,
+primary key(personID, eventID),
+foreign key(personID) references person,
+foreign key(eventID) references events
+);
+
+create table flights(
+flightID int,
+flightDate date,
+flightNumber varchar(50),
+primary key(flightID)
+);
+
+create table personFlights(
+personID int,
+flightID int,
+primary key(personID, flightID),
+foreign key(personID) references person,
+foreign key(flightID) references flights
+);
