@@ -30,3 +30,6 @@ Designed a relational database where I created multiple tables linking them with
 * Procedure 11: Given a start and end date, return individuals info of those who were in the same flight as someone who tested positive
 * Procedure 12: Given a start and end date, return individuals info of those who were in the same event as someone who tested positive
 * Procedure 13: Return names of individuals who have recovered
+
+## Files Contained
+* SQL Code from text file 
