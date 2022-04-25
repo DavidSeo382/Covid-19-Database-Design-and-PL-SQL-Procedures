@@ -1,4 +1,4 @@
-# Create tables to fill the database
+# CREATE TABLES TO FILL THE DATABASE # 
 
 create table house(
 houseID int,
@@ -56,7 +56,7 @@ foreign key(personID) references person,
 foreign key(flightID) references flights
 );
 
-# Insert data into said tables
+# INSERT DATA INTO SAID TABLES # 
 
 insert into house values(1, '100 Lane Street', 12345);
 insert into house values(2, '101 Lane Street', 12346);
@@ -90,6 +90,7 @@ insert into personFlights values(3, 3);
 insert into personFlights values(3, 1);
 insert into personFlights values(4, 2);
 
+
 # Procedure 1 Code
 # Add a new house to the database with exception handling to check if that house already exists
 # Create sequence for new house ID, start at 4 since numbers 1-3 are already in the house table
@@ -122,6 +123,7 @@ for item in c1 loop
 end loop;
 End;
 
+
 # Procedure 2 Code
 # Add a person to an existing house with exception handling to check if the person already exists or if the house exists
 
@@ -151,6 +153,7 @@ else
 end if;
 end;
 
+
 # Procedure 3 Code
 # Add a new test result
 
@@ -177,6 +180,7 @@ else
   insert into testResults values(person_ID , test_Date, v_result);
 end if;
 end;
+
 
 # Procedure 4 Code
 # Update a persons status of if they are positive or negative with COVID-19
@@ -205,6 +209,7 @@ end if;
 end if;
 end;
 
+
 # Procedure 5 Code
 # Add a new event
 
@@ -229,6 +234,7 @@ else
     dbms_output.put_line('Event ID: ' || event_id.currval);
 end if;
 END;
+
 
 # Procedure 6 Code
 # Print out individuals information for those whose current COVID-19 status is positive
@@ -255,6 +261,7 @@ loop
 end loop;
 close c2;
 END;
+
 
 # Procedure 7 Code
 # Enter a list of people attending an event with exception handling to check if the event exists, if the person exists, or if said person is already attending the event
@@ -295,6 +302,7 @@ end if;
 end if;
 END;
 
+
 # Procedure 8 Code
 # Given the name and phone number of a person, print out test dates and test results
 
@@ -322,6 +330,7 @@ else
 end if;
 END;
 
+
 # Procedure 9 Code
 # Given an input date, print out the accumulated number of positive cases by that date
 
@@ -333,6 +342,7 @@ BEGIN
 select count(*) into v_resultfrom testResults where testDate <= v_date_to_measure and testResult = 1;
 return v_result;
 END cases_so_far;
+
 
 # Procedure 10 Code
 # Print out names, phone numbers, houseID, and status of people who live in the same house as aynone whose current COVID-19 status is positive
@@ -356,6 +366,7 @@ BEGIN
         end loop;
     end loop;
 END; 
+
 
 # Procedure 11 Code
 # Given a start and end date, return individuals info of those who were in the same flight as someone who tested positive
@@ -400,9 +411,9 @@ BEGIN
   if flag = 1 then
     dbms_output.put_line('No flight within given timeframe');
     end if;
-    
   end if;
 END;
+
 
 # Procedure 12 Code
 # Given a start and end date, return individuals info of those who were in the same event as someone who tested positive
@@ -439,6 +450,7 @@ else
     end loop;
 end if;
 END;
+
 
 # Procedure 13 Code
 # Return names of individuals who have recovered
