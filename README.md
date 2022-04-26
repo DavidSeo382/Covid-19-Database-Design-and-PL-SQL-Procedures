@@ -3,11 +3,11 @@
 ## Overview
 Designed a relational database where I created multiple tables linking them with primary-foreign key relationships. Afterwards, I created PL/SQL procedures to insert data with exception handling and to automate the process of querying data based on repetitive questions.
 
-## Tools Used
+## Tools Used:
 * SQL Developer
 * Oracle Database
 
-## Tables
+## Tables:
 * House - The house that the individuals live in
 * Person - Represents the individual and their info
 * Test Results - Contains history of test results
@@ -16,7 +16,7 @@ Designed a relational database where I created multiple tables linking them with
 * Flights - Information regarding airplanes individuals took
 * Person Flights - Contains information about who took which plane
 
-## Procedures
+## Procedures:
 * Procedure 1: Add a new house to the database with exception handling to check if that house already exists
 * Procedure 2: Add a person to an existing house with exception handling to check if the person already exists or if the house exists
 * Procedure 3: Add a new test result 
@@ -31,5 +31,5 @@ Designed a relational database where I created multiple tables linking them with
 * Procedure 12: Given a start and end date, return individuals info of those who were in the same event as someone who tested positive
 * Procedure 13: Return names of individuals who have recovered
 
-## Files Contained
+## Files Contained:
 * SQL Code from text file 
