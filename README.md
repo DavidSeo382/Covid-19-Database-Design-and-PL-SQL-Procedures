@@ -3,7 +3,7 @@
 ## Overview
 Designed a relational database where I created multiple tables linking them with primary-foreign key relationships. Afterwards, I created PL/SQL procedures to insert my own made up personal data with exception handling along with automating the process of querying data based on repetitive questions.
 
-## Tools Used
+## Tools / Languages Used
 * SQL Developer
 * Oracle Database
 
