@@ -1,7 +1,7 @@
 # Covid-19 Database Design and SQL Procedures
 
 ## Overview
-Designed a relational database where I created multiple tables linking them with primary-foreign key relationships. Afterwards, I inserted my own made up personal data with exception handling along with creating PL/SQL procedures to automate the process of querying data based on repetitive questions.
+Designed a relational database where I created multiple tables linking them with primary-foreign key relationships. Afterwards, I inserted my own made up personal data then created PL/SQL procedures with exception handling to automate the process of querying data based on repetitive questions.
 
 ## Tools / Languages Used
 * SQL Developer
